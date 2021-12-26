@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Colors */
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --bg: hsl(217, 54%, 11%);
+    --card: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --font-f: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--white);
+    flex-direction: column;
+    font-family: var(--font-f);
+}
+
+.card {
+    width: 350px;
+    height: auto;
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 100px 1px rgb(0, 0, 0, .1);
+}
+
+.img-bx {
+    width: 100%;
+    height: 286px;
+    background-size: 100% 100%;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.view-bx {
+    width: 100%;
+    height: 100%;
+    background: hsl(178, 100%, 50%, 50%);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+.img-bx:hover .view-bx {
+    opacity: 1;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 400ms ease;
+}
+
+.title:hover {
+    color: var(--Cyan);
+}
+
+.para {
+    font-size: 18px;
+    color: var(--Soft-blue);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.price,
+.days-left {
+    display: flex;
+    align-items: center;
+}
+
+.price img,
+.days-left img {
+    margin-right: 10px;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.days-left {
+    color: var(--Soft-blue);
+}
+
+.line {
+    border: 1px solid var(--line);
+    margin-bottom: 1rem;
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.photo-pro {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.credit {
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
+
+.credit a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 400ms ease;
+}
+
+.credit a:hover {
+    color: var(--Cyan);
+}
+
+/* atribution */
+.attribution {
+    color: #fff;
+    margin: 2rem;
+}
+
+.attribution a {
+    color: cyan;
+}
